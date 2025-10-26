@@ -7,7 +7,7 @@ Your SSH key has been generated and configured for the TheUSDOX GitHub repositor
 ## 📋 **Key Details**
 
 - **Key Type**: ED25519 (most secure)
-- **Email**: kathushan@theusdox.com
+- **Email**: dkathushan@gmail.com
 - **Private Key**: `C:\Users\kathu\.ssh\theusdox_github`
 - **Public Key**: `C:\Users\kathu\.ssh\theusdox_github.pub`
 
@@ -16,7 +16,7 @@ Your SSH key has been generated and configured for the TheUSDOX GitHub repositor
 ### 1. Copy Your Public Key
 ```bash
 # Your public key (copy this entire line):
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIB+1edeiAPhHqfj4ZB2uOtSaMhTwhZ7/pJdQ/PsXcfYk kathushan@theusdox.com
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIhEnkjRfCvoLWzGxCGcpjLGkg1wU3bCvoW6WrOZ9QdC dkathushan@gmail.com
 ```
 
 ### 2. Add to GitHub Account
