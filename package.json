@@ -1,0 +1,35 @@
+{
+  "name": "theusdox-dapp",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,md}\"",
+    "format:check": "prettier --check \"src/**/*.{js,jsx,ts,tsx,css,md}\"",
+    "test": "echo \"No tests specified\" && exit 0",
+    "lighthouse": "lhci autorun",
+    "security-audit": "npm audit"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "ethers": "^6.9.0",
+    "framer-motion": "^7.6.12",
+    "@react-three/fiber": "^8.13.1",
+    "@react-three/drei": "^9.59.3",
+    "tailwindcss": "^3.5.1"
+  },
+  "devDependencies": {
+    "vite": "^5.3.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^8.0.0",
+    "eslint-plugin-react": "^7.32.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^3.0.0",
+    "@lhci/cli": "^0.12.0"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "extends": ["next/core-web-vitals"],
+  "rules": {
+    "react/prop-types": "off",
+    "@next/next/no-css-tags": "off"
+  },
+  "env": {
+    "node": true,
+    "browser": true,
+    "es6": true
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "name": "TheUSDOX DApp Development Environment",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:18",
+  
+  // Features to add to the dev container
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+
+  // Configure tool-specific properties
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "ms-vscode.vscode-eslint",
+        "bradlc.vscode-tailwindcss",
+        "ms-vscode.vscode-json",
+        "ms-vscode.vscode-typescript-next",
+        "formulahendry.auto-rename-tag",
+        "christian-kohler.path-intellisense",
+        "ms-vscode.live-server",
+        "ms-vscode.vscode-react-native",
+        "walletconnect.walletconnect-developer-tools"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": {
+          "source.fixAll.eslint": true
+        },
+        "emmet.includeLanguages": {
+          "javascript": "javascriptreact"
+        }
+      }
+    }
+  },
+
+  // Use 'forwardPorts' to make a list of ports inside the container available locally
+  "forwardPorts": [5173, 3000],
+
+  // Ports that should be labeled and exposed to the public
+  "portsAttributes": {
+    "5173": {
+      "label": "Vite Dev Server",
+      "onAutoForward": "notify"
+    },
+    "3000": {
+      "label": "Alternative Dev Server",
+      "onAutoForward": "notify"
+    }
+  },
+
+  // Use 'postCreateCommand' to run commands after the container is created
+  "postCreateCommand": "npm install",
+
+  // Use 'postStartCommand' to run commands each time the container starts
+  "postStartCommand": "echo 'Welcome to TheUSDOX DApp development environment!'",
+
+  // Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root
+  "remoteUser": "node",
+
+  // Set environment variables
+  "containerEnv": {
+    "NODE_ENV": "development"
+  },
+
+  // Mount the local git config and ssh keys
+  "mounts": [
+    "source=${localEnv:HOME}/.gitconfig,target=/home/node/.gitconfig,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/.ssh,target=/home/node/.ssh,type=bind,consistency=cached"
+  ]
+}
