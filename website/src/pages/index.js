@@ -296,7 +296,7 @@ export default function TheUSDOXHome() {
           flexWrap: 'wrap' 
         }}>
           <motion.a 
-            href="https://twitter.com/theusdox" 
+            href="https://x.com/TheUSDOXs" 
             target="_blank" 
             rel="noopener noreferrer" 
             whileHover={{ scale: 1.1, color: '#ffffff' }}
@@ -311,7 +311,22 @@ export default function TheUSDOXHome() {
             Twitter
           </motion.a>
           <motion.a 
-            href="https://discord.gg/usdox" 
+            href="https://t.me/theusdox" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            whileHover={{ scale: 1.1, color: '#ffffff' }}
+            style={{ 
+              color: '#00b3ff', 
+              textDecoration: 'none', 
+              fontSize: 15, 
+              fontWeight: 500,
+              transition: 'color 0.3s ease'
+            }}
+          >
+            Telegram
+          </motion.a>
+          <motion.a 
+            href="https://discord.gg/K49Nu2Jbz" 
             target="_blank" 
             rel="noopener noreferrer" 
             whileHover={{ scale: 1.1, color: '#ffffff' }}
@@ -339,21 +354,6 @@ export default function TheUSDOXHome() {
             }}
           >
             GitHub
-          </motion.a>
-          <motion.a 
-            href="https://docs.theusdox.com" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            whileHover={{ scale: 1.1, color: '#ffffff' }}
-            style={{ 
-              color: '#00b3ff', 
-              textDecoration: 'none', 
-              fontSize: 15, 
-              fontWeight: 500,
-              transition: 'color 0.3s ease'
-            }}
-          >
-            Documentation
           </motion.a>
         </div>
         <div style={{ 
