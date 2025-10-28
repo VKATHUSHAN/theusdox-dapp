@@ -14,36 +14,21 @@
     }
   ],
   "env": {
-    "VITE_BSC_RPC": "@vite_bsc_rpc",
-    "VITE_BSC_TESTNET_RPC": "@vite_bsc_testnet_rpc",
-    "VITE_ETHEREUM_RPC": "@vite_ethereum_rpc",
-    "VITE_USDOX_CONTRACT": "@vite_usdox_contract",
-    "VITE_VAULT_CONTRACT": "@vite_vault_contract",
-    "VITE_ORACLE_CONTRACT": "@vite_oracle_contract",
-    "VITE_ALCHEMY_KEY": "@vite_alchemy_key",
-    "VITE_INFURA_API_KEY": "@vite_infura_api_key",
-    "VITE_WALLETCONNECT_PROJECT_ID": "@vite_walletconnect_project_id",
-    "VITE_0X_API_KEY": "@vite_0x_api_key",
-    "VITE_APP_NAME": "@vite_app_name",
-    "VITE_APP_VERSION": "@vite_app_version",
-    "VITE_APP_DESCRIPTION": "@vite_app_description",
-    "VITE_DOMAIN": "@vite_domain",
-    "VITE_DEVELOPER_EMAIL": "@vite_developer_email",
-    "VITE_TWITTER_URL": "@vite_twitter_url",
-    "VITE_DISCORD_URL": "@vite_discord_url",
-    "VITE_GITHUB_URL": "@vite_github_url",
-    "VITE_DOCS_URL": "@vite_docs_url"
+    "VITE_APP_NAME": "TheUSDOX",
+    "VITE_APP_VERSION": "1.0.0",
+    "VITE_APP_DESCRIPTION": "The On-Chain Dollar Revolution",
+    "VITE_DOMAIN": "theusdox.com",
+    "VITE_DEVELOPER_EMAIL": "hello@theusdox.com",
+    "VITE_TWITTER_URL": "https://x.com/TheUSDOXs",
+    "VITE_TELEGRAM_URL": "https://t.me/theusdox",
+    "VITE_DISCORD_URL": "https://discord.gg/K49Nu2Jbz",
+    "VITE_GITHUB_URL": "https://github.com/theusdox"
   },
   "build": {
     "env": {
       "VITE_ENVIRONMENT": "production",
       "VITE_DEBUG": "false",
       "VITE_NETWORK": "bsc-mainnet"
-    }
-  },
-  "functions": {
-    "website/src/pages/api/**/*.js": {
-      "maxDuration": 30
     }
   }
 }
